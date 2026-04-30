@@ -1,117 +1,84 @@
-🧑‍💻 Brianna Cox — DevOps / Platform Engineering Portfolio
+# Brianna Cox — DevOps / Platform Engineering Portfolio
 
-🚀 Observability • Automation • AI Microservices • Platform Reliability
+## Overview
 
-🔷 Overview
+This repository showcases a hands-on platform engineering portfolio focused on observability, automation, Linux security, and AI-enabled microservices.
 
-This repository showcases a hands-on platform engineering portfolio focused on:
+The goal of this portfolio is to demonstrate production-style engineering practices, including monitoring, alerting, troubleshooting, secure configuration, automation, and scalable API design.
 
-📊 Observability (Prometheus, Grafana, Alertmanager)
-⚙️ Automation (Ansible, Bash, CI/CD concepts)
-🤖 AI-integrated microservices (FastAPI + OpenAI)
-🔐 Linux hardening & security practices
-🧪 Real-world troubleshooting in virtualized environments
+## Core Focus Areas
 
-This portfolio is designed to reflect production-style engineering, not just tutorials.
+- Observability and monitoring
+- Linux systems administration
+- DevOps automation
+- Platform reliability
+- AI microservice development
+- Security and compliance-minded operations
 
-🏗️ Architecture
-                ┌─────────────────────┐
-                │   API Requests      │
-                └────────┬────────────┘
-                         ↓
-                ┌─────────────────────┐
-                │  FastAPI Service    │
-                └────────┬────────────┘
-                         ↓
-         ┌─────────────────────────────────┐
-         │ AI Logic (OpenAI / Fallback)    │
-         └────────┬────────────────────────┘
-                  ↓
-        ┌───────────────────────┐
-        │ Logging + Metrics     │
-        └────────┬──────────────┘
-                 ↓
-     ┌─────────────────────────────┐
-     │ Prometheus → Grafana        │
-     └────────┬────────────────────┘
-              ↓
-     ┌─────────────────────────────┐
-     │ Alertmanager (Notifications)│
-     └─────────────────────────────┘
-📊 Project 1: Observability Stack
-🔹 Stack
-Prometheus
-Node Exporter
-Grafana
-Alertmanager
-Linux (CentOS / RHEL)
-🔹 Features
-System metrics collection (CPU, memory, disk, network)
-Custom Grafana dashboards
-Alerting rules for system thresholds
-Service-level troubleshooting (systemd, ports, configs)
-🔹 Real Issues Solved
-Prometheus config failure (static_configs duplication)
-Grafana service access (port/firewall issues)
-YAML parsing + service restart failures
-🔹 Key Takeaway
+## Projects Included
 
-Built a full monitoring pipeline that reduces MTTR through visibility and alerting.
+## 1. Observability Stack
 
-🤖 Project 2: AI Sponsorship SaaS
-🔹 Stack
-FastAPI
-Uvicorn
-OpenAI API (feature flag controlled)
-Python (async)
-REST API (Swagger UI)
-🔹 Endpoint Example
+### Summary
+
+Built a Linux-based monitoring stack using Prometheus, Grafana, Node Exporter, and Alertmanager to simulate production observability workflows.
+
+### Technologies
+
+- Prometheus
+- Grafana
+- Node Exporter
+- Alertmanager
+- Linux
+- systemd
+- FirewallD
+- YAML configuration
+
+### Work Completed
+
+- Installed and configured Prometheus
+- Configured Node Exporter for system metrics
+- Built Grafana dashboards for system health
+- Configured firewall access for monitoring ports
+- Troubleshot Prometheus YAML configuration errors
+- Validated services using systemd, curl, and port checks
+
+### Skills Demonstrated
+
+- Monitoring and observability
+- Metrics collection
+- Dashboard design
+- Linux service troubleshooting
+- Alerting fundamentals
+- Root cause analysis
+
+## 2. AI Sponsorship SaaS Microservice
+
+### Summary
+
+Built a FastAPI microservice prototype that generates structured sponsorship draft recommendations using either AI logic or deterministic fallback logic.
+
+### Technologies
+
+- Python
+- FastAPI
+- Uvicorn
+- OpenAI API
+- REST API
+- Swagger UI
+- WSL2 Ubuntu
+- Environment variables
+
+### Key Features
+
+- POST API endpoint for sponsorship draft generation
+- Feature flag for enabling or disabling AI
+- Structured JSON response
+- Fallback logic for demo and offline use
+- Logging for request visibility
+- API documentation through Swagger UI
+
+### Example Endpoint
+
+```bash
 POST /sponsorships/draft
-🔹 Sample Response
-{
-  "fit_score": 87,
-  "brand_alignment_summary": "...",
-  "audience_insight": "...",
-  "campaign_idea": "...",
-  "risks": "...",
-  "recommended_next_step": "..."
-}
-🔹 Features
-AI + fallback logic (USE_AI=true/false)
-Structured output for business use
-Async-ready design (future queue integration)
-Clean API interface with docs
-🔹 Key Takeaway
-
-Designed a scalable AI-ready service with production-minded architecture.
-
-🔐 Project 3: Linux Hardening & Security
-🔹 Focus Areas
-SSH hardening (key-based auth, no root login)
-FirewallD configuration
-SELinux policy awareness
-Log rotation + backups
-🔹 Key Takeaway
-
-Applied secure-by-default practices aligned with enterprise compliance (STIG mindset).
-
-⚙️ Project 4: Automation & DevOps
-🔹 Tools
-Ansible
-Bash
-Jenkins (conceptual / pipeline workflows)
-🔹 Work
-Automated infrastructure tasks
-Created reusable scripts
-Reduced manual intervention
-🔹 Key Takeaway
-
-Improved consistency and reliability through automation.
-
-🧪 Lab Environment
-Layer	Setup
-Host	Windows 11
-Linux	WSL2 (Ubuntu)
-VM	VirtualBox (CentOS 9)
-Enterprise	VMware vSphere (experience)# BcoxPort
-Portfolio Sample
